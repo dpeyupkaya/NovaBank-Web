@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -8,10 +9,13 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 p-4">
+    <nav className="bg-orange-500 p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-white text-lg font-bold">Online Bank</div>
+        <div className="text-white text-lg font-bold">
+        <img src="/logo/ing.png"  className="h-10" />
+
+        </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
@@ -31,7 +35,7 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`fixed inset-y-0 left-0 w-64 bg-blue-600 transform ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}>
+      <div className={`fixed inset-y-0 left-0 w-64 bg-orange-500 transform ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}>
         <div className="p-4">
        
           <ul className="space-y-4">
