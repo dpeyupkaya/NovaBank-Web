@@ -9,7 +9,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="bg-orange-500 p-4">
+    <nav className="bg-[#FF5812] p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-white text-lg font-bold">
@@ -17,13 +17,13 @@ export const Navbar = () => {
 
         </div>
 
-        {/* Desktop Menu */}
+    
         <ul className="hidden md:flex space-x-6">
-          <li><a href="#" className="text-white hover:text-gray-200">Hesap  İşlemleri</a></li>
-          <li><a href="#" className="text-white hover:text-gray-200">Para Transferi</a></li>
-          <li><a href="#" className="text-white hover:text-gray-200">Ödemeler</a></li>
-          <li><a href="#" className="text-white hover:text-gray-200">Kartlar</a></li>
-          <li><a href="#" className="text-white hover:text-gray-200">Daha Fazla</a></li>
+          <li><a href="#" className="text-white hover:text-yellow-200">Hesap  İşlemleri</a></li>
+          <li><a href="#" className="text-white hover:text-yellow-200">Para Transferi</a></li>
+          <li><a href="#" className="text-white hover:text-yellow-200">Ödemeler</a></li>
+          <li><a href="#" className="text-white hover:text-yellow-200">Kartlar</a></li>
+          <li><a href="#" className="text-white hover:text-yellow-200">Daha Fazla</a></li>
         </ul>
 
        
@@ -36,9 +36,9 @@ export const Navbar = () => {
 
    
       <div className={`fixed inset-y-0 left-0 w-64 bg-orange-500 transform ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}>
-        <div className="p-4">
+        <div className="p-4 bg-[#FF5812]">
        
-          <ul className="space-y-4">
+          <ul className="space-y-4  bg-[#FF5812]">
             <li><a href="#" className="text-white hover:text-gray-200">Hesap İşlemleri</a></li>
             <li><a href="#" className="text-white hover:text-gray-200">Para Transferi</a></li>
             <li><a href="#" className="text-white hover:text-gray-200">Ödemeler</a></li>
