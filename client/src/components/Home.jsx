@@ -5,7 +5,7 @@ import Hesapİslemler from './HesapIslemler'
 export const Home = () => {
   return (
     <>
-    <Navbar />
+ 
     <Hesapİslemler />
     </>
   )
